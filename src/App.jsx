@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <Container className='my-4 containerReact'>
+      <Container className='my-4 mainPage'>
         <h1 className='text-center display-2'>Lista de Tareas</h1>
         <FormTareas />
       </Container>
