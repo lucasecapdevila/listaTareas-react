@@ -4,6 +4,7 @@ import ListaTareas from "./ListaTareas";
 
 const FormTareas = () => {
   const [tarea, setTarea] = useState('')
+  const [tareas, setTareas] = useState([])
 
   return (
     <section>
@@ -16,6 +17,7 @@ const FormTareas = () => {
             minLength={3}
             maxLength={50}
             onChange={(e)=> setTarea(e.target.value)}  //  con e.target.value accedo al valor del input
+            value={tarea}
           />
           <Button className="mx-2" variant="success" type="submit">Enviar</Button>
         </Form.Group>
