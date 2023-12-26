@@ -10,7 +10,6 @@ const FormTareas = () => {
   //  Funciones
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Desde handleSubmit');
 
     //  No puedo hacer tareas.push(asd), así que uso una alternativa:
     setTareas([...tareas, tarea])
@@ -36,7 +35,7 @@ const FormTareas = () => {
           <Button className="mx-2" variant="success" type="submit">Enviar</Button>
         </Form.Group>
         
-        <ListaTareas />
+        <ListaTareas tareas={tareas} />
       </Form>
     </section>
   );
